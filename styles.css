@@ -1151,7 +1151,30 @@ img {
 
 .footer-bottom {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-legal a {
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: var(--transition);
+}
+
+.footer-legal a:hover {
+    color: var(--teal-light);
+}
+
+.footer-legal-divider {
+    color: var(--border-light);
+    font-size: 13px;
 }
 
 .footer-bottom p {
