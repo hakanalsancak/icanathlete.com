@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Can — Your Personal AI Coach for Performance & Growth</title>
+    <meta name="description" content="Track your performance, get AI-powered coaching, and build discipline. The smartest way to train. Launching April 5, 2026.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo.png" alt="I Can Logo" class="nav-logo-img">
+                <span class="nav-logo-text">I Can</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#ai-coach">AI Coach</a>
+                <a href="#screenshots">App</a>
+                <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#features">Features</a>
+            <a href="#ai-coach">AI Coach</a>
+            <a href="#screenshots">App</a>
+            <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-glow-2"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Launching April 5, 2026
+            </div>
+            <h1 class="hero-title">
+                Your Personal<br>
+                <span class="gradient-text">AI Coach</span> for<br>
+                Performance & Growth
+            </h1>
+            <p class="hero-subtitle">
+                Track your progress. Get AI-powered coaching. Build unbreakable discipline.<br class="hide-mobile">
+                The smartest way to train — available for every sport, every athlete.
+            </p>
+            <div class="hero-cta-group">
+                <a href="#waitlist" class="btn btn-primary btn-lg">
+                    Join the Waitlist
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <a href="#features" class="btn btn-ghost btn-lg">
+                    See Features
+                </a>
+            </div>
+
+            <!-- Countdown Timer -->
+            <div class="countdown-container">
+                <p class="countdown-label">Launching in</p>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-unit">Days</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-unit">Hours</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-unit">Minutes</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-unit">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Phone Mockup -->
+        <div class="hero-phone">
+            <div class="phone-mockup">
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <img src="assets/simulator_screenshot_8BD07AFF-A29E-4D1B-93B2-DB3CF9171685.png" alt="I Can App Home Screen" class="phone-screen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="proof-grid">
+                <div class="proof-item">
+                    <span class="proof-number" data-target="15">0</span><span class="proof-suffix">+</span>
+                    <span class="proof-label">Sports Supported</span>
+                </div>
+                <div class="proof-divider"></div>
+                <div class="proof-item">
+                    <span class="proof-number" data-target="24">0</span><span class="proof-suffix">/7</span>
+                    <span class="proof-label">AI Coach Access</span>
+                </div>
+                <div class="proof-divider"></div>
+                <div class="proof-item">
+                    <span class="proof-number" data-target="100">0</span><span class="proof-suffix">%</span>
+                    <span class="proof-label">Personalized</span>
+                </div>
+                <div class="proof-divider"></div>
+                <div class="proof-item">
+                    <span class="proof-number" data-target="3">0</span><span class="proof-suffix"></span>
+                    <span class="proof-label">Report Types</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Everything you need to<br><span class="gradient-text">reach your potential</span></h2>
+                <p class="section-subtitle">A complete system that tracks, coaches, and motivates — so you never train blind again.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card feature-card-large" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/><path d="M12 7v5l3 3"/></svg>
+                    </div>
+                    <h3 class="feature-title">Performance Tracking</h3>
+                    <p class="feature-desc">Log focus, effort, and confidence after every session. Build a data-driven picture of your progress over time — no more guesswork.</p>
+                    <div class="feature-visual">
+                        <div class="mini-stats">
+                            <div class="mini-stat">
+                                <div class="mini-stat-bar" style="--width: 85%; --color: #14b8a6;">
+                                    <span>Focus</span>
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                            <div class="mini-stat">
+                                <div class="mini-stat-bar" style="--width: 92%; --color: #f59e0b;">
+                                    <span>Effort</span>
+                                    <span>92%</span>
+                                </div>
+                            </div>
+                            <div class="mini-stat">
+                                <div class="mini-stat-bar" style="--width: 78%; --color: #8b5cf6;">
+                                    <span>Confidence</span>
+                                    <span>78%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5c0 2.76-2.24 5-5 5s-5-2.24-5-5a5 5 0 0 1 5-5z"/><path d="M2 21c0-4.42 4.48-8 10-8s10 3.58 10 8"/></svg>
+                    </div>
+                    <h3 class="feature-title">AI-Powered Reports</h3>
+                    <p class="feature-desc">Get weekly, monthly, and yearly reports that analyze your patterns, highlight strengths, and pinpoint areas to improve.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10z"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                    </div>
+                    <h3 class="feature-title">Daily Accountability</h3>
+                    <p class="feature-desc">Streak tracking and daily mantras keep you coming back. Build the habit of consistency — the foundation of all progress.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                    </div>
+                    <h3 class="feature-title">Breathing Exercises</h3>
+                    <p class="feature-desc">Guided sessions to prepare before games, sharpen focus before training, or wind down for recovery. Your mental edge.</p>
+                </div>
+
+                <div class="feature-card feature-card-large" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="feature-title">Train Together</h3>
+                    <p class="feature-desc">Add friends, track each other's streaks, and stay accountable together. Growth is better when shared.</p>
+                    <div class="feature-visual">
+                        <div class="friend-avatars">
+                            <div class="friend-avatar" style="--delay: 0s; background: linear-gradient(135deg, #14b8a6, #0ea5e9);">H</div>
+                            <div class="friend-avatar" style="--delay: 0.1s; background: linear-gradient(135deg, #f59e0b, #ef4444);">C</div>
+                            <div class="friend-avatar" style="--delay: 0.2s; background: linear-gradient(135deg, #8b5cf6, #ec4899);">K</div>
+                            <div class="friend-plus" style="--delay: 0.3s;">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Coach Section -->
+    <section class="ai-coach-section" id="ai-coach">
+        <div class="container">
+            <div class="ai-coach-grid">
+                <div class="ai-coach-content" data-aos="fade-right">
+                    <span class="section-tag">AI Coach</span>
+                    <h2 class="section-title">A personal coach<br>in your pocket.<br><span class="gradient-text">Available 24/7.</span></h2>
+                    <p class="section-subtitle" style="text-align: left;">Ask anything about your sport — training, tactics, recovery, mindset, nutrition. Get instant, personalized answers powered by AI that understands your journey.</p>
+
+                    <div class="coach-prompts">
+                        <div class="coach-prompt">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <span>How can I improve my shooting?</span>
+                        </div>
+                        <div class="coach-prompt">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <span>What should I eat before a game?</span>
+                        </div>
+                        <div class="coach-prompt">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <span>Create a recovery routine for me</span>
+                        </div>
+                        <div class="coach-prompt">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <span>How do I deal with pre-game nerves?</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-coach-visual" data-aos="fade-left">
+                    <div class="phone-mockup phone-mockup-tilted">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <img src="assets/simulator_screenshot_E56E7888-91D2-44BC-9F07-F7F941D7C50B.png" alt="AI Coach Chat" class="phone-screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Showcase -->
+    <section class="screenshots-section" id="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Inside the App</span>
+                <h2 class="section-title">Designed for <span class="gradient-text">athletes who care</span></h2>
+                <p class="section-subtitle">Every screen, every feature — built to help you perform at your best.</p>
+            </div>
+
+            <div class="screenshots-carousel">
+                <div class="screenshot-item" data-aos="fade-up">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <img src="assets/simulator_screenshot_8BD07AFF-A29E-4D1B-93B2-DB3CF9171685.png" alt="Home Screen" class="phone-screen">
+                        </div>
+                    </div>
+                    <p class="screenshot-label">Home</p>
+                </div>
+                <div class="screenshot-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <img src="assets/simulator_screenshot_49D18B9E-9E3C-435D-A2C9-64261674C053.png" alt="Reports Screen" class="phone-screen">
+                        </div>
+                    </div>
+                    <p class="screenshot-label">Reports</p>
+                </div>
+                <div class="screenshot-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <img src="assets/simulator_screenshot_147ED41D-DB8D-4350-9A0C-D99D5DFE37B9.png" alt="AI Coach" class="phone-screen">
+                        </div>
+                    </div>
+                    <p class="screenshot-label">AI Coach</p>
+                </div>
+                <div class="screenshot-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <img src="assets/IMG_3450.PNG" alt="Breathing Exercise" class="phone-screen">
+                        </div>
+                    </div>
+                    <p class="screenshot-label">Breathe</p>
+                </div>
+                <div class="screenshot-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <img src="assets/simulator_screenshot_C18C3671-C3C9-4DB5-B277-55670AC86273.png" alt="Friends" class="phone-screen">
+                        </div>
+                    </div>
+                    <p class="screenshot-label">Friends</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Simple system.<br><span class="gradient-text">Real results.</span></h2>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card" data-aos="fade-up">
+                    <div class="step-number">01</div>
+                    <h3>Log Your Activity</h3>
+                    <p>After every training session or game, log your focus, effort, and confidence. Takes under 2 minutes.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="step-number">02</div>
+                    <h3>Get AI Insights</h3>
+                    <p>Your AI coach analyzes patterns and gives you personalized feedback — strengths, weaknesses, and what to work on next.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <h3>Improve & Repeat</h3>
+                    <p>Follow suggestions, build streaks, review your reports. Over time, the system compounds into real, measurable growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Report Feature -->
+    <section class="report-section">
+        <div class="container">
+            <div class="report-grid">
+                <div class="report-visual" data-aos="fade-right">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <img src="assets/IMG_3451.PNG" alt="Weekly Report" class="phone-screen">
+                        </div>
+                    </div>
+                </div>
+                <div class="report-content" data-aos="fade-left">
+                    <span class="section-tag">Smart Reports</span>
+                    <h2 class="section-title">Your progress,<br><span class="gradient-text">analyzed by AI.</span></h2>
+                    <p class="section-subtitle" style="text-align: left;">Every week, your AI coach generates a detailed report breaking down your performance — what went well, what needs work, and exactly how to improve.</p>
+
+                    <div class="report-features">
+                        <div class="report-feature">
+                            <div class="report-feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            </div>
+                            <div>
+                                <strong>Strength Analysis</strong>
+                                <p>See exactly what's working and why</p>
+                            </div>
+                        </div>
+                        <div class="report-feature">
+                            <div class="report-feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Actionable Advice</strong>
+                                <p>Clear next steps based on your data</p>
+                            </div>
+                        </div>
+                        <div class="report-feature">
+                            <div class="report-feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+                            </div>
+                            <div>
+                                <strong>Progress Tracking</strong>
+                                <p>Weekly, monthly, and yearly trends</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sport Section -->
+    <section class="sports-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Multi-Sport</span>
+                <h2 class="section-title">Built for <span class="gradient-text">your sport</span></h2>
+                <p class="section-subtitle">Choose your sport and the entire experience adapts — tracking, insights, coaching, and more.</p>
+            </div>
+            <div class="sports-grid">
+                <div class="sport-pill">Football</div>
+                <div class="sport-pill">Basketball</div>
+                <div class="sport-pill">Boxing</div>
+                <div class="sport-pill">Tennis</div>
+                <div class="sport-pill">Swimming</div>
+                <div class="sport-pill">Running</div>
+                <div class="sport-pill">MMA</div>
+                <div class="sport-pill">Cricket</div>
+                <div class="sport-pill">Rugby</div>
+                <div class="sport-pill">Golf</div>
+                <div class="sport-pill">Volleyball</div>
+                <div class="sport-pill">Athletics</div>
+                <div class="sport-pill">Cycling</div>
+                <div class="sport-pill">Wrestling</div>
+                <div class="sport-pill sport-pill-more">+ More</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Section -->
+    <section class="waitlist-section" id="waitlist">
+        <div class="container">
+            <div class="waitlist-card">
+                <div class="waitlist-glow"></div>
+                <img src="assets/logo.png" alt="I Can Logo" class="waitlist-logo">
+                <h2 class="section-title">Be the first to<br><span class="gradient-text">unlock your potential</span></h2>
+                <p class="section-subtitle">Join the waitlist and get early access when we launch on April 5.</p>
+
+                <div class="waitlist-form" id="waitlistForm">
+                    <!-- FreeWaitlists integration will go here -->
+                    <div class="form-row">
+                        <input type="email" id="waitlistEmail" placeholder="Enter your email" class="waitlist-input" required>
+                        <button type="submit" class="btn btn-primary btn-lg waitlist-btn" id="waitlistBtn">
+                            Join Waitlist
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                    <p class="waitlist-note">Free forever for early members. No spam, ever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <img src="assets/logo.png" alt="I Can Logo" class="footer-logo">
+                        <span class="footer-brand-name">I Can</span>
+                        <p class="footer-tagline">Your personal AI coach for performance & growth.</p>
+                    </div>
+
+                    <div class="footer-links-group">
+                        <div class="footer-col">
+                            <h4 class="footer-heading">Contact</h4>
+                            <a href="mailto:contact@alsancar.co.uk" class="footer-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                contact@alsancar.co.uk
+                            </a>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4 class="footer-heading">Follow Us</h4>
+                            <div class="footer-socials">
+                                <a href="https://www.instagram.com/ican_app/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="https://www.tiktok.com/@.icanofficial?_r=1&_t=ZN-94w7IeGGnv4" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.75a8.18 8.18 0 0 0 4.76 1.52V6.84a4.84 4.84 0 0 1-1-.15z"/></svg>
+                                    <span>TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-divider"></div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Alsancar Ltd. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
