@@ -4,7 +4,7 @@
 
 // --- Countdown Timer ---
 function updateCountdown() {
-    const launch = new Date('2026-04-05T00:00:00').getTime();
+    const launch = new Date('2026-04-21T12:00:00').getTime();
     const now = new Date().getTime();
     const diff = launch - now;
 
