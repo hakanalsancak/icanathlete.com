@@ -122,6 +122,30 @@ function animateCounters() {
 animateCounters();
 
 // --- Smooth Scroll for CTA buttons ---
+function smoothScrollTo(targetY, duration) {
+    const startY = window.pageYOffset;
+    const diff = targetY - startY;
+    const start = performance.now();
+
+    function step(currentTime) {
+        const elapsed = currentTime - start;
+        const progress = Math.min(elapsed / duration, 1);
+
+        // Ease in-out cubic for a nice, smooth feel
+        const eased = progress < 0.5
+            ? 4 * progress * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+        window.scrollTo(0, startY + diff * eased);
+
+        if (progress < 1) {
+            requestAnimationFrame(step);
+        }
+    }
+
+    requestAnimationFrame(step);
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -131,7 +155,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             const isWaitlist = this.getAttribute('href') === '#waitlist';
             const offset = isWaitlist ? 20 : 80;
             const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({ top, behavior: 'smooth' });
+            smoothScrollTo(top, 1200);
         }
     });
 });
