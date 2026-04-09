@@ -220,6 +220,9 @@ img {
     flex-direction: column;
     padding: 16px 24px 24px;
     gap: 16px;
+    background: rgba(10, 22, 40, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .mobile-menu.active {
